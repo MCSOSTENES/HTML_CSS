@@ -158,8 +158,8 @@ main div.video-01 iframe{
     position: absolute; /*posicao absoluta a box div.video-01*/
     top: 3%;            /*deslocamento do topo da box div.video-01*/
     left: 2%;           /*deslocamento do lado esquedo da box div.video-01*/
-    width: 96%;         /*No curso como foi dado 5% de deslocamento a esquerda, se quero 5% a direita é só fazer -> 100% -5% - 5% = 90%*/
-    height: 94%;        /*No curso como foi dado 5% de deslocamento do top, se quero 5% a abaixo é só fazer -> 100% -5% - 5% = 90%*/
+    width: 96%;         /*No curso como foi dado 5% de deslocamento a esquerda, se quero 5% a direita é só fazer -> (100% -5% - 5% = 90%)*/
+    height: 94%;        /*No curso como foi dado 5% de deslocamento do top, se quero 5% a abaixo é só fazer -> (100% -5% - 5% = 90%)*/
                         /*Assim centralizo o box (iframe) no box (div.video-01) // Teste outros valores seguindo a regra*/
 }
 
