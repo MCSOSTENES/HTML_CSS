@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 01</title>
+    
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+            height: 250px;
+        }
+        th, td, tr{
+            border: 1px solid black;
+            text-align: center;
+        }
+        
+        tr:nth-child(1), tr:nth-child(2), tr:nth-child(7), tr:nth-child(10){
+            background-color: gray;
+        }
+
+        div table{
+            width: 700px;
+            height: 500px;
+        }
+        div.notas{
+
+            overflow-x: auto;
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td>1</td> <td>2</td> <td rowspan="2">3</td> <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td> <td>6</td> <td>7</td> 
+        </tr>
+        <tr>
+            <td colspan="3">8</td> <td>9</td> 
+        </tr>
+        <tr>
+            <td colspan="2">10</td> <td rowspan="2">11</td> <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td> <td>14</td> <td>15 </td>
+        </tr>
+    </table>
+   
+    <br>
+
+    <table>
+        <tr>
+            <td colspan="4">A</td> <td rowspan="4">B</td> 
+        </tr>
+        <tr>
+            <td rowspan="4">C</td> <td>D</td> <td>E</td> <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td> <td>H</td> <td>I</td> 
+        </tr>
+        <tr>
+            <td>J</td> <td>K</td> <td>L</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <div class="notas">
+        <table>
+            <tr>
+                <th rowspan="2" scope="col">Area</th>
+                <th rowspan="2" scope="col">Disciplina</th>
+                <th colspan="2" scope="colgroup">Nota</th>
+                <th rowspan="2" scope="col">Media</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 01</th>
+                <th scope="col">Nota 02</th>
+            </tr>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matematica</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row">Media Exatas</th>
+                <td>0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>Historia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row">Media Humanas</th>
+                <td>0</td>
+            </tr>
+        </table>
+    </div>
+   <br>
+</body>
+</html>
