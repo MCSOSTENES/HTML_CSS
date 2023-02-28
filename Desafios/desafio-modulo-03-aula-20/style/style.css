@@ -1,0 +1,122 @@
+
+/*-----------------INITIAL DECLARATION------------------*/
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+/*-----------------------GLOBAL---------------------------*/
+*{
+    --backimg0: url("../imagens/background000edi.jpg");
+    --backimg1: url("../imagens/background001.jpg");
+    --backimg2: url("../imagens/background002.jpg");
+    --cor99: white;
+    --cor98: black;
+    --cor97: darkgray;
+    --cor96: rgba(0, 0, 0, 0.362);
+
+    --fontPadrao: Arial, Helvetica, sans-serif;
+    --fontCabeca: 'Passion One', sans-serif;
+    --fontTexto: 'Sriracha', sans-serif;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+/*---------------------BODY--------------------------------*/
+
+html, body{
+    height: 100vh;
+    background-color: var(--cor97);
+}
+
+/*-------------------HEADER-------------------------------*/
+
+header{
+    font-family: var(--fontCabeca);
+    background-color: var(--cor98);
+    color: var(--cor99);
+    text-align: center;
+}
+
+header h1{
+    font-size: 7vw;
+    font-variant: small-caps;
+}
+
+header p{
+    font-size: 4vw;
+}
+
+header a{
+    text-decoration: None;
+    color: var(--cor99);
+    font-weight: bold;
+}
+
+header a:hover{
+    text-decoration: underline;
+    color: rgb(220, 221, 222);
+}
+
+/*-------------------SECTION------------------------------*/
+
+section{
+    font-family: var(--fontTexto);
+    font-size: 3vw;
+    line-height: 2em;
+    padding-left: 30px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.225);
+}
+
+section.normal{
+    background-color: var(--cor99);
+}
+
+section.imagem{
+    box-shadow: inset 5px 5px 2px 0px rgba(0, 0, 0, 0.211);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.imagem p{
+    background-color: rgba(0, 0, 0, 0.626);
+    padding: 10px;
+    display: inline-block;
+    color: var(--cor99);
+}
+
+section.imagem#img01{
+    background-image: var(--backimg1);
+    background-position: right bottom;
+}
+
+section.imagem#img02{
+    background-image: var(--backimg2);
+}
+
+/*----------------FOOTER---------------------------------*/
+
+footer{
+    background-color: var(--cor98);
+    color: var(--cor99);
+    padding: 5px;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: None;
+    color: var(--cor99);
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: rgb(220, 221, 222);
+}
+
+/*--------------------------END-------------------*/
