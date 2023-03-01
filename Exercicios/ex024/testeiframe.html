@@ -6,13 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste iframe</title>
 </head>
+<style>
+    iframe{
+        height: 300px;
+        width: 600px;
+        border: 1px solid black;
+    }
+    iframe.tela{
+        height: 300px;
+        width: 600px;
+    }
+</style>
 <body>
     <h1>Teste iframe</h1>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet veniam, doloribus aperiam, voluptas eaque sunt iure, ducimus nesciunt nihil enim maiores dignissimos ab illo incidunt ex blanditiis odio dolore eveniet.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quaerat earum nesciunt error provident expedita iure labore, sit alias qui, porro reprehenderit illum ipsam inventore sunt. Voluptates doloribus officiis eveniet!</p>
-    
+
+    Clique nos links para visualizar na janela abaixo
+
+    <ul>
+        <li>
+            <a href="https://mcsostenes.github.io/HTML_CSS/Desafios/desafio-modulo-02/index" target="frame">Desafio modulo 02 - HTML e CSS Curso em Video</a>
+        </li>
+        <li>
+            <a href="../../Desafios/desafio-modulo-03-aula-21-pt-7/tabela01.html" target="frame">Tabelas capitulo 21 - HTML e CSS Curso em Video</a>
+        </li>
+    </ul>
+
+    <iframe id= "tela" name= "frame" src="" frameborder="0">Tela de visualização</iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda provident eius minima nesciunt dignissimos deserunt minus exercitationem, eveniet rem. Incidunt distinctio quaerat, atque quidem delectus reprehenderit consequuntur et odio alias.</p>
+
     <iframe src="../../Desafios/desafio-modulo-03-aula-21-pt-7/tabela01.html" frameborder="0"></iframe>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, fugit mollitia? Nobis rem eius sapiente vitae dolore ad nesciunt architecto quidem quia nulla provident magni totam maxime ipsum, hic ea.</p>
+
+    <iframe src="https://www.linkedin.com/in/sósteneschaves/" frameborder="0"></iframe>
     
 </body>
 </html>
