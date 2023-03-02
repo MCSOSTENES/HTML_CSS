@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*___________Global__________*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+/*__________body____________*/
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
