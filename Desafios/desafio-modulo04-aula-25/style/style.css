@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/*__________ Global _____________*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    --cor01: #49a09d;
+    --cor02: #5f2c82;
+}
+
+/*_______________HTML, body ____________*/
+
+html, body{
+    background-color: var(--cor02);
+
+    width: 100vw;
+    height: 100vh;
+
+    box-sizing: border-box;
+}
+
+/*__________ Main _____________*/
+
+main{
+    background-color: white;
+    
+    position: relative;
+    display: block;
+
+    width: 300px;
+    height: 550px;
+    
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px #183433cb;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+
+}
+
+/*__________ Main > Section _____________*/
+
+
+/*__________ Main > Section > div _____________*/
+
+main > section > div#img{
+    display: block;
+    background-image: url('../img/metal.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 250px;
+}
+
+main > section > div#mensagem{
+    display: block;
+}
+main > section > div#mensagem > h1{
+       text-align: center;
+}
+
+main > section > div#mensagem > p{
+    padding: 0px 10px;
+    
+    text-align: justify;
+}
+
+
+/*__________ Main > Section > div > Form _____________*/

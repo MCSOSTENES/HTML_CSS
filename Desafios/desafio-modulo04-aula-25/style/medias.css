@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/*
+
+Breakpoints
+
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+
+*/
+
+/*_____________ Small screens, laptops ______________*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    /*__________ Main > Section > div _____________*/
+
+    main{
+        width: 90vw;
+
+    }
+    main > section > div#img{
+        float: left;
+        
+        width: 30%;
+        height: 550px;
+
+        
+    }
+    main > section > div#mensagem{
+        float:right;
+
+        width: 65%;
+    }
+
+}
+
+/*_____________ Desktops, large screens ______________*/
+
+@media screen and (min-width: 1025px){
+    
+}
+
+/*_____________ Extra large screens, TV ______________*/
