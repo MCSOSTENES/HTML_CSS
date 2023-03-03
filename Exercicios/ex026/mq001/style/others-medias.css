@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/*__________Print______________________*/
+
+
+/*__________Tablet______________________*/
+
+@media screen and (min-width: 768px){
+    
+    body{
+        padding-top: 10px;
+    }
+
+    header{
+        width: 650px;
+        margin: auto;
+        border-radius: 10px 10px 0px 0px ;
+    }
+
+    header > menu{
+        display:block
+    }
+    
+    header > menu > ul{
+        text-align: center;
+    }
+    
+    header > menu > ul> li{
+        display: inline-block;
+    }
+    
+    main{
+        width: 650px;
+        margin: auto;
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+    span#burger{
+        display: none
+    }
+}
+
+/*__________Computer______________________*/
+
+
+/*__________TV______________________*/
