@@ -14,7 +14,7 @@ Breakpoints
 
 /*_____________ Small screens, laptops ______________*/
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1000px) {
     
     /*__________ Main > Section > div _____________*/
 
@@ -33,6 +33,8 @@ Breakpoints
     main > section > div#mensagem{
         float:right;
 
+        font-size: 1.1em;
+
         width: 65%;
     }
 
@@ -40,8 +42,26 @@ Breakpoints
 
 /*_____________ Desktops, large screens ______________*/
 
-@media screen and (min-width: 1025px){
-    
+@media screen and (min-width: 1000px){
+    main{
+        width: 990px;
+
+    }
+    main > section > div#img{
+        float: right;
+        
+        width: 40%;
+        height: 550px;
+
+        
+    }
+    main > section > div#mensagem{
+        float:left;
+
+        font-size: 1.1em;
+
+        width: 59%;
+    }
 }
 
 /*_____________ Extra large screens, TV ______________*/

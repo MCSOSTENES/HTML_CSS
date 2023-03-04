@@ -6,7 +6,7 @@
     margin: 0px;
     padding: 0px;
 
-    font-family: 'Times New Roman', Times, serif;
+    --font: font-family: 'Times New Roman', Times, serif;
 
     --cor01: #49a09d;
     --cor02: #5f2c82;
@@ -42,6 +42,7 @@ main{
     left: 50%;
 
     transform: translate(-50%, -50%);
+    transition: width 0.3s, heigth 0.3s;
 
 
 }
@@ -59,6 +60,7 @@ main > section > div#img{
     background-repeat: no-repeat;
 
     height: 250px;
+
 }
 
 main > section > div#mensagem{
@@ -75,4 +77,100 @@ main > section > div#mensagem > p{
 }
 
 
-/*__________ Main > Section > div > Form _____________*/
+/*______ Main > Section > div > Form ________*/
+
+
+/*_ Main > Section > div > Form (Email e senha)_*/
+
+main > section > div > form > div.campo{
+    background-color: var(--cor02);
+
+    width: 90%;
+    height: 2.5em;
+    margin: auto;
+
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+
+    overflow: hidden;
+}
+
+main > section > div > form > div.campo > i{
+    width: 40px;
+    padding: 5px 0px;
+
+    font-size: 2em;
+    color: white;
+}
+
+main > section > div > form > div.campo > input{
+    background-color: #e1f0f0;
+    
+    padding: 5px;
+    border-radius: 10px;
+    
+    width: calc(100% - 58px);
+    height: 70%;
+
+    font-size: 1em;
+    text-align: center;
+
+    transform: translateY(-12px);
+}
+
+main > section > div > form > div.campo > input:focus-within{
+    background-color: white;
+}
+
+main > section > div > form > div.campo > label{
+    display: none;
+}
+
+/* Main > Section > div > Form (Enviar e recsenha)*/
+
+main > section > div#mensagem > form > div.botoes > input[type=submit]{
+    background-color: var(--cor01);
+    
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    
+    border-radius: 10px;
+    display:block;
+    
+    font-size: 1em;
+    font-family: var(--font);
+    color: white;
+}
+/*usando caminho mais simples*/
+ div.botoes input[type=submit]:hover{
+    background-color: #49a09ddd;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.334);
+}
+
+main > section > div#mensagem > form > div.botoes > a{
+    background-color: #68dfdd;
+    
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+    
+    border-radius: 10px;
+    display:block;
+    
+    font-size: 1em;
+
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+/*usando caminho mais simples*/
+div.botoes a:hover{
+    background-color: #68dfdda5;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.334);
+}
