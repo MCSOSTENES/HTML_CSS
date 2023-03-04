@@ -82,7 +82,7 @@ main > section > div#mensagem > p{
 
 /*_ Main > Section > div > Form (Email e senha)_*/
 
-main > section > div > form > div.campo{
+div.campo{
     background-color: var(--cor02);
 
     width: 90%;
