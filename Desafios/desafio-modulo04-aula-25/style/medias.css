@@ -15,27 +15,31 @@ Breakpoints
 /*_____________ Small screens, laptops ______________*/
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {
-    
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
     /*__________ Main > Section > div _____________*/
 
-    main{
-        width: 90vw;
-
+    section{
+        width: 80vw;
+        height: 300px;
     }
     main > section > div#img{
         float: left;
         
         width: 30%;
-        height: 550px;
-
-        
+        height: 100%;   
     }
     main > section > div#mensagem{
         float:right;
-
         font-size: 1.1em;
 
         width: 65%;
+    }
+    main > section > div > form > div.campo > input{
+            
+        transform: translateY(-16px);
     }
 
 }
@@ -43,15 +47,20 @@ Breakpoints
 /*_____________ Desktops, large screens ______________*/
 
 @media screen and (min-width: 1000px){
-    main{
-        width: 990px;
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section{
+        width: 950px;
+        height: 350px;
 
     }
     main > section > div#img{
         float: right;
         
         width: 40%;
-        height: 550px;
+        height: 100%;
 
         
     }
@@ -61,6 +70,10 @@ Breakpoints
         font-size: 1.1em;
 
         width: 59%;
+    }
+    main > section > div > form > div.campo > input{
+            
+        transform: translateY(-15px);
     }
 }
 

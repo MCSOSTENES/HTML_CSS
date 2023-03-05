@@ -10,9 +10,11 @@
 
     --cor01: #49a09d;
     --cor02: #5f2c82;
+
+    box-sizing: border-box;
 }
 
-/*_______________HTML, body ____________*/
+/*_______________HTML, body, main ____________*/
 
 html, body{
     background-color: var(--cor02);
@@ -20,15 +22,21 @@ html, body{
     width: 100vw;
     height: 100vh;
 
-    box-sizing: border-box;
 }
 
-/*__________ Main _____________*/
-
 main{
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+/*__________ section _____________*/
+
+section{
     background-color: white;
     
-    position: relative;
+    position: absolute;
     display: block;
 
     width: 300px;
@@ -56,7 +64,7 @@ main{
 main > section > div#img{
     display: block;
     background-image: url('../img/metal.jpg');
-    background-position: bottom;
+    background-position: left bottom;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -66,15 +74,16 @@ main > section > div#img{
 
 main > section > div#mensagem{
     display: block;
+    margin: auto;
 }
 main > section > div#mensagem > h1{
        text-align: center;
+       margin-bottom: 10px;
 }
 
 main > section > div#mensagem > p{
-    padding: 0px 10px;
-    
-    text-align: justify;
+    text-align: center;
+    line-height: 1.2em;
 }
 
 
@@ -87,7 +96,7 @@ div.campo{
     background-color: var(--cor02);
 
     width: 90%;
-    height: 2.5em;
+    height: 40px;
     margin: auto;
 
     margin-bottom: 5px;
@@ -111,13 +120,13 @@ main > section > div > form > div.campo > input{
     padding: 5px;
     border-radius: 10px;
     
-    width: calc(100% - 58px);
-    height: 70%;
+    width: calc(100% - 45px);
+    height: 98%;
 
     font-size: 1em;
     text-align: center;
 
-    transform: translateY(-12px);
+    transform: translateY(-13px);
 }
 
 main > section > div > form > div.campo > input:focus-within{
